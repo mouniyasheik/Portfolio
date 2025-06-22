@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 
+
 export const About = () => {
   return (
     <section className={styles.container} id="about">
@@ -30,14 +31,14 @@ export const About = () => {
           </div>
 
           <div className={styles.resumeWrapper}>
-            <a
-              href="/resume.pdf" // or Google Drive link
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.resumeButton}
-            >
-              📄 View My Resume
-            </a>
+           <a
+  href="/mouniya_resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.resumeButton}
+>
+  📄 View My Resume
+</a>
           </div>
         </div>
       </div>

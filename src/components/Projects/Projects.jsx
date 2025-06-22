@@ -93,14 +93,14 @@ export const Projects = () => {
           </p>
           <div className={styles.projectLinks}>
             <a
-              href="https://mouniya-portfolio.vercel.app/"
+              href="https://mouniya-portfolio.onrender.com"
               target="_blank"
               rel="noreferrer"
             >
               🔗 Live Demo
             </a>
             <a
-              href="https://github.com/your-username/portfolio"
+              href="https://github.com/mouniyasheik/Portfolio"
               target="_blank"
               rel="noreferrer"
             >
