@@ -83,4 +83,11 @@
   .projectImage {
     margin-bottom: 20px;
   }
+   .projectLinks a {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0; /* Remove horizontal spacing */
+    width: fit-content;
+  }
+  
 }
