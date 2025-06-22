@@ -1,0 +1,72 @@
+@import "../../vars.css";
+
+.skillsSection {
+  scroll-margin-top: 100px; /* ensures the section is not hidden behind navbar */
+  padding-top: 50px;        /* adds visual spacing from top */
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.sectionTitle {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.skillGroup {
+  margin-bottom: 50px;
+}
+
+.skillGroup h3 {
+  font-size: 25px;
+  margin-bottom: 15px; /* space between heading and buttons */
+  color: var(--color-primary);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badges span {
+  background-color: #3ea8d3;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.badges span:hover {
+  background-color: #3498c4;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Active (click/tap) effect — scale up */
+.badges span:active {
+  background-color: #2d84a9;
+  transform: scale(1.05); /* increase size on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .badges {
+    justify-content: center;
+  }
+
+  .skillGroup h3 {
+    text-align: center;
+  }
+}

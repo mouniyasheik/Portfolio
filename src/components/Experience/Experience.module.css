@@ -1,0 +1,97 @@
+@import "../../vars.css";
+
+.experienceSection {
+  /* padding: 70px 10%; */
+   scroll-margin-top: 100px; /* ensures the section is not hidden behind navbar */
+  padding-top: 80px;        /* adds visual spacing from top */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+  
+  background: linear-gradient(
+    135deg,
+    rgba(13, 33, 64, 0.8) 0%,
+    rgba(25, 55, 109, 0.9) 100%
+  );
+  color: var(--color-text);
+ 
+}
+
+.sectionTitle {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  border-bottom: 3px solid var(--color-primary);
+  display: inline-block;
+}
+
+/* Card Styling */
+.experienceCard {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Row with certificate button */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Title Styling */
+.experienceCard h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #38bdf8; /* Sky blue */
+}
+
+/* Company Link */
+.companyLink {
+  color: #facc15; /* Yellow */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.companyLink:hover {
+  color: #fde68a;
+  text-decoration: underline;
+}
+
+.companyLink:visited {
+  color: #facc15; /* Prevent color change after visit */
+}
+
+/* Certificate Button */
+.certificateBtn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.certificateBtn:hover {
+  background-color: #405ab5;
+}
+
+/* Duration Text */
+.duration {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Details List */
+.details {
+  padding-left: 18px;
+  line-height: 1.7;
+  font-size: 18px;
+}

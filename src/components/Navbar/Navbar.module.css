@@ -1,0 +1,122 @@
+ @import "../../vars.css";
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menu {
+  position: relative; /* Keep this as relative */
+  display: flex;
+  align-items: center;
+}
+
+.menuBtn {
+  display: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.menuItems {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-right: 10px;
+}
+
+.menuItems a {
+  font-size: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.menuItems a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: var(--color-primary);
+}
+
+.menuItems a:hover::after {
+  width: 100%;
+}
+
+/* 🔽 Mobile Styles */
+@media screen and (max-width: 830px) {
+  .navbar {
+    padding: 1rem 8%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    /* Remove position: absolute and top: 100% here */
+    /* This ensures the .menu container stays within the flex flow of the navbar */
+    flex-direction: column; /* Keep this for the menu items when open */
+    align-items: flex-end; /* Keep this for aligning menu items to the right */
+    position: relative; /* Ensure it's relative for positioning children if needed */
+  }
+
+  .menuBtn {
+    display: block; /* Make the button visible */
+    /* If you want to absolutely position the button within .menu, you can */
+    /* For now, it will flow naturally within the .menu flex container */
+  }
+
+  .menuItems {
+    position: absolute; /* Keep this for positioning the dropdown menu */
+    top: 100%; /* This will now be 100% of the .menu container's height */
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 24px 33px;
+    border-radius: 10px;
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1001;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .menuItems a {
+    font-size: 18px;
+    color: var(--color-text);
+  }
+}
