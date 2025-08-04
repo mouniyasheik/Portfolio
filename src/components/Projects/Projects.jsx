@@ -78,11 +78,12 @@ export const Projects = () => {
 
       {/* Project 3 (Image Left) */}
       <div className={styles.projectCard}>
-        <img
-          src={getImageUrl("projects/protfolio.png")}
-          alt="Portfolio Website"
-          className={styles.projectImage}
-        />
+       <img
+  src={getImageUrl("projects/prot.jpg")}
+  alt="Portfolio Website"
+  className={`${styles.projectImage} `}
+/>
+
         <div className={styles.projectContent}>
           <h3>Portfolio Website</h3>
           <p>

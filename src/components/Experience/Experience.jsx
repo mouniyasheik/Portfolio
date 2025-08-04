@@ -64,8 +64,16 @@ export const Experience = () => {
               APSCHE & Smart Bridge
             </a>
           </h3>
+          <a
+            href="https://drive.google.com/file/d/1eQv-G13aF0qOXZuqRQE9Ipz3PMLUWLkJ/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.certificateBtn}
+          >
+            📄 Certificate
+          </a>
         </div>
-        <p className={styles.duration}>May 2024 – Present · Remote</p>
+        <p className={styles.duration}>May 2025 – June 2025 · Remote</p>
         <ul className={styles.details}>
           <li>
             Currently building end-to-end web applications using the MERN stack.

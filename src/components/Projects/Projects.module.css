@@ -26,6 +26,7 @@
   padding: 30px;
   transition: transform 0.3s ease;
   flex-wrap: wrap;
+   min-height: 320px; 
 }
 
 .projectCard:hover {
@@ -33,10 +34,14 @@
 }
 
 .projectImage {
-  width: 40%;
+
+   width: 40%;
   border-radius: 10px;
   object-fit: cover;
+ 
 }
+
+
 
 .projectContent {
   width: 55%;

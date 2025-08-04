@@ -2,8 +2,8 @@
 
 .experienceSection {
   /* padding: 70px 10%; */
-   scroll-margin-top: 100px; /* ensures the section is not hidden behind navbar */
-  padding-top: 80px;        /* adds visual spacing from top */
+   scroll-margin-top: 100px; 
+  padding-top: 80px;        
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 40px;
@@ -41,6 +41,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 5px;
 }
 
 /* Title Styling */

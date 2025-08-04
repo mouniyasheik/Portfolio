@@ -27,12 +27,12 @@ export const About = () => {
         <div className={styles.bottomRow}>
           <div className={styles.badges}>
             <span>🎓 Final Year B.Tech CSE</span>
-            <span>📊 CGPA: 8.3 / 10</span>
+            <span>📊 CGPA: 8.28 / 10</span>
           </div>
 
           <div className={styles.resumeWrapper}>
            <a
-  href="/mouniya_resume.pdf"
+  href="/mouniya_resume1.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className={styles.resumeButton}
